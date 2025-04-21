@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Frontend Developer</title>
+    <link rel="icon" href="Favicon_AG.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class=".scroll-container">
     <header>
         <video autoplay muted loop data-autoplay="" webkit-playsinline="" playsinline="" data-object-fit="cover" id="bg-video">
             <source src="Background-Animation.mp4" type="video/mp4">
@@ -29,9 +31,13 @@
             <p>Frontend Developer | UI/UX Developer</p>
         </div>
     </header>
+
+    
     
     <section id="about">
         <h2>About Me</h2>
+        <div class="about-container">
+            <img src="About_image.png" alt="Agalya - Frontend Developer">
         <p>I'm Agalya, a passionate front-end web developer with a strong foundation in HTML, CSS, JavaScript, React, and UI/UX design. With hands-on experience in freelance web development, I have worked on multiple projects, including website development for a digital marketing startup.
 
         My expertise lies in creating visually appealing, user-friendly, and SEO-optimized websites. I have completed an internship in Angular web development at Infosys Springboard and hold certifications in JavaScript, UI/UX, and React.
@@ -39,7 +45,12 @@
         Currently, I also work as a Content Creation Associate at Teknoturf, where I design interactive EdTech videos. My combined experience in web development and content creation allows me to blend creativity with technical skills to build impactful digital experiences.
             
         I'm always eager to explore new technologies and take on exciting projects that push the boundaries of web development.</p>
+        </div>
     </section>
+
+
+    
+
 
     <section id="skills">
         <h2>Skills</h2>
@@ -57,26 +68,49 @@
 
  
     <section id="project">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <div class="projects">
             <div class="project-card">
-                <img class="image-container" src="Nugens_website.png" alt="My Trade Journal">
+                <img class="image-container" src="Nugens_website.png" alt="Nugens Website">
                 <h3>Nugens Digital Marketing Website</h3>
+
+                <div class="project-tags">
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">API Integration</span>
+                    <span class="project-tag">CSS3 and HTML5</span>
+                </div>
+
                 <p>Designed and developed an interactive, user-centric website for NUgens' digital marketing services.</p>
             </div>
             <div class="project-card">
                 <img class="image-container" src="E-commerce-website.jpeg" alt="E-commerce">
                 <h3>AI-Driven User Behavior Prediction System UI</h3>
+                <div class="project-tags">
+                    <span class="project-tag">HTML 5</span>
+                    <span class="project-tag">CSS3</span>
+                    <span class="project-tag">JavaScript</span>
+                </div>
                 <p>Crafted a modern front-end design for a predictive AI platform targeting enhanced e-commerce interactions.</p>
             </div>
             <div class="project-card">
                 <img class="image-container" src="UI-design clg-website.jpeg" alt="UI-design">
                 <h3>UI Design for Decentralized Crowdfunding Platform</h3>
+                <div class="project-tags">
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">API Integration</span>
+                    <span class="project-tag">CSS3 and HTML5</span>
+                </div>
                 <p>Created a sleek, accessible interface for decentralized crowdfunding, ensuring trust and ease of use.</p>
             </div>
             <div class="project-card">
                 <img class="image-container" src="Portfolio-website.png" alt="Portfolio">
                 <h3>Portfolio</h3>
+                <div class="project-tags">
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">CSS3</span>
+                    <span class="project-tag">API Integration</span>
+                    <span class="project-tag">HTML5</span>
+                </div>
                 <p>Wanna explore how I built this portfolio? Dive in to see the technologies and design behind it, and get a closer look at my work in progress.</p>
             </div>
         </div>
@@ -102,29 +136,50 @@
     </div>
     </section>
 
+
+
     <section id="certification">
         <h2>Certifications & Achievements</h2>
         <div class="cards">
-          <div class="cer">
-               <h3 class="card">JavaScript (Intermediate) Certificate</h3>
+
+            <div class="cer">
+                <h3 class="card">JavaScript (Intermediate) Certificate</h3>
                <p class="issued">Hacker Rank</p>
                <p class="year">Aug 2024</p>
-            </div>
-            <div class="cer">
+                <div class="image-container">
+                  <img src="HackerRank_Icon-1000px.png" alt="Hacker Rank logo">
+                </div>
+              </div>
+
+
+              <div class="cer">
                 <h3 class="card">Angular Web Developer</h3>
                 <p class="issued">Infosys|Springboard</p>
                 <p class="year">Aug 2024</p>
-            </div>
-           <div class="cer">
+                <div class="image-container">
+                  <img src="infosys_springboard_LOGO.png" alt="Infosys logo">
+                </div>
+              </div>
+
+
+
+              <div class="cer">
                 <h3 class="card">Digital Skills: User Experience</h3>
                 <p class="issued">Accenture</p>
                 <p class="year">Sep 2024</p>
-            </div>
-            <div class="cer">
+                <div class="image-container">
+                  <img src="Accenture_logo.jpeg" alt="Accenture logo">
+                </div>
+              </div>
+
+              <div class="cer">
                 <h3 class="card">JavaScript Essentials</h3>
                 <p class="issued">CISCO</p>
                 <p class="year">Oct 2024</p>
-            </div>
+                <div class="image-container">
+                  <img src="cisco_logo.jpeg" alt="CISCO logo">
+                </div>
+              </div>
         </div>
     </section>
 
@@ -144,7 +199,7 @@
                     </div>
                     <div class="form-group">
                         <label for="textarea">Message</label>
-                        <textarea required cols="1" rows="2" id="textarea" name="textarea"></textarea>
+                        <textarea required cols="3" rows="3" id="textarea" name="textarea"></textarea>
                     </div>
                     <button type="submit" class="form-submit-btn">Submit</button>
                 </form>
@@ -162,8 +217,7 @@
                     </div>
                     <!-- Email -->
                     <div class="icon">
-                        <a href="mailto:agalyakumar532@email.com">
-                            <i class="fas fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=agalyakumar532@email.com"><i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
@@ -176,10 +230,13 @@
            <p>&copy; 2025 Agalya Kumar. All rights reserved.</p>
         </div>
       </footer>
-        
+    </div>
+      
+
     <script src="script.js"
     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
 
     </script>
+
 </body>
 </html>

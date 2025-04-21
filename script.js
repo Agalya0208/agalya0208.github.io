@@ -23,5 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-                                            
+  // Toggle visibility of scroll-up button
+  window.addEventListener("scroll", () => {
+    const scrollUp = document.getElementById("scrollUp");
+    scrollUp.style.opacity = window.scrollY > 200 ? "1" : "0";
+  });
