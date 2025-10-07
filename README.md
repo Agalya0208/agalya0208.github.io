@@ -26,7 +26,7 @@ This portfolio showcases my **projects, UI/UX skills, and frontend expertise**. 
 - **Live Demo:** [View Here](https://agalya0208.github.io/)  
 - **Screenshots:**  
   ![Portfolio Home](home.png)  
-  ![Portfolio Projects](project.png)
+  ![Portfolio Projects](projects.png)
 
 *(Repeat for other projects if you have any like a React app, EdTech app, or Angular project.)*
 
